@@ -45,7 +45,6 @@ nav > ul{
 ul > li {
     list-style: none;
     font-size: .875rem;
-    color: #5e5e5e;
     text-transform: uppercase;
     margin-top: 1rem;
     margin-right: 1rem;
@@ -53,32 +52,33 @@ ul > li {
 }
 nav > ul > li > a{
     text-decoration: none;
+    color: #5e5e5e;
 }
-main > h1{
+main >.Cuerpo > h1{
     font-size: 2.250rem;
     font-weight: 400;
-    color: #000000;
+    color: #191a1d;
+    font-style: normal;
 }
 
-.first-paragraph{
+main > .Cuerpo > .first-paragraph{
     font-size: 1.125rem;
     font-weight: 400;
     color: #8d8d8a;
     margin-top: 0.9375rem;
     text-align: justify;
-    line-height: 2.0rem;
+    line-height: 1.95rem;
 }
-main>p{
+main > .Cuerpo > p{
     font-size: 1.0rem;
     font-weight: 400;
     color: #8d8d8a;
     margin-top: 1.875rem;
     text-align: justify;
     line-height: 1.8rem;
-    max-width: 675px;
 }
 
-main>div>div>p{
+main > .Cuerpo > div > div > p{
     font-size: 0.875rem;
     font-weight: 400;
     color: #8d8d8a;
@@ -87,7 +87,7 @@ main>div>div>p{
     line-height: 1.8rem;
 }
 
-main>div>div>img{
+main>.Cuerpo>div>div>img{
     width: 100%;
     height: auto;
     border-radius: 12px;
@@ -117,6 +117,10 @@ main>div>div>img{
     header{
         margin-bottom: 3.125rem;
     }
+    main >.Cuerpo > h1{
+        font-size: 2.625rem;
+        color: #191a1d;
+    }
 }
 
 @media only screen and (min-width: 769px) {
@@ -140,18 +144,18 @@ main>div>div>img{
     div > h2{
         font-size: 1.75rem;
         text-transform: uppercase;
-        margin-top: 0.3rem;
+        margin-top: 0.1rem;
     }
     
     div > hr{
         background-color: #4B6CC1;
         height: 0.39rem;
-        margin-top: .4rem;
+        margin-top: .1rem;
     }
     nav > ul{
         display: flex;
         justify-content: flex-start;
-        margin-top: 0.6rem;
+        margin-top: 0rem;
     }
     ul > li {
         font-size: .875rem;
@@ -160,23 +164,26 @@ main>div>div>img{
         margin-right: 3rem;
         font-weight:normal;
     }
-    main > h1{
+    main > .Cuerpo > h1{
         font-size: 2.625rem;
         font-weight: 400;
         color: #000000;
     }
 
     main{
-        width: 740px;
+        width: 100%;
+        display: flex;
         justify-content: center;
     }
-
-    main > div{
+    .Cuerpo{
+        max-width: 675px;
+    }
+    main >.Cuerpo > div{
         display: flex;
         box-sizing: border-box;
         justify-content: space-between;
     }
-    main>p{
+    main>div>p{
         font-size: 1.0rem;
         font-weight: 400;
         color: #8d8d8a;
@@ -185,4 +192,14 @@ main>div>div>img{
         max-width: 100%;
     }
 }
-    
+@media only screen and (min-width: 1025px) {
+    body{
+        padding: 5rem 1.875rem;
+        display: flex;
+        justify-content: center;
+    }
+    div>header {
+        width: 964px;
+    }
+
+}
