@@ -5,8 +5,8 @@
     font-family: 'Rubik', sans-serif;
 }
 
-body {
-    padding: 1.25rem;
+body{
+    padding: 1.25rem 1.25rem 3.75rem 1.25rem;
     width: 100%;
 }
 
@@ -14,10 +14,10 @@ a > img{
     border-radius: 50%;
     width: 5rem;
     height: 5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 header{
-    margin-bottom: 3.125rem;
+    margin-bottom: 2.5rem;
 }
 div > h2{
     font-size: 1.5rem;
@@ -26,35 +26,36 @@ div > h2{
     font-style:inherit;
     font-weight: 500;
 }
+
 div > hr{
     background-color: #4B6CC1;
     height: 0.35rem;
     border: none;
     width: 2rem;
     border-radius: 0.2rem;
-    margin-top: .4rem;
-    margin-bottom: 0.8rem;
+    margin-top: .7rem;
+    margin-bottom: 0rem;
 }
-nav > ul {
+nav > ul{
     display: flex;
     justify-content: flex-start;
-    width: 100%;
+    margin-top: 0.3125rem;
 }
 
 ul > li {
     list-style: none;
     font-size: .875rem;
-    color: #817b7b;
+    color: #5e5e5e;
     text-transform: uppercase;
     margin-top: 1rem;
-    margin-right: 2rem;
-
+    margin-right: 1rem;
+    font-weight: bold;
 }
 nav > ul > li > a{
     text-decoration: none;
 }
 main > h1{
-    font-size: 2.625rem;
+    font-size: 2.250rem;
     font-weight: 400;
     color: #000000;
 }
@@ -65,30 +66,123 @@ main > h1{
     color: #8d8d8a;
     margin-top: 0.9375rem;
     text-align: justify;
-    line-height: 1.96rem;
+    line-height: 2.0rem;
 }
-.second-andMore{
+main>p{
     font-size: 1.0rem;
     font-weight: 400;
-    color: #191a1d;
+    color: #8d8d8a;
     margin-top: 1.875rem;
     text-align: justify;
     line-height: 1.8rem;
-
+    max-width: 675px;
 }
+
+main>div>div>p{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #8d8d8a;
+    margin-top: 1.5625rem;
+    text-align: center;
+    line-height: 1.8rem;
+}
+
 main>div>div>img{
     width: 100%;
     height: auto;
+    border-radius: 12px;
+    margin-top: .8rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 501px) {
+    body{
+        padding: 1.875rem 1.875rem 3.75rem 1.875rem;
+        width: 100%;
+    }
+    a > img{
+        margin-bottom: 1.875rem;
+    }
+    div > hr{
+        height: 0.4rem;
+        margin-top: .2rem;
+    }
+    ul > li {
+        list-style: none;
+        font-size: .875rem;
+        color: #817b7b;
+        text-transform: uppercase;
+        margin-top: .1rem;
+        margin-right: 2rem;
+    }
+    header{
+        margin-bottom: 3.125rem;
+    }
+}
+
+@media only screen and (min-width: 769px) {
     header{
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        margin-bottom: 0rem;
+        width: 100%;
+    }
+    a > img{
+        border-radius: 50%;
+        width: 6.25rem;
+        height: 6.25rem;
+        margin-bottom: 3.125rem;
+        margin-right: 2rem;
+    }
+    header>div{
+        width: 100%;
+    }
+
+    div > h2{
+        font-size: 1.75rem;
+        text-transform: uppercase;
+        margin-top: 0.3rem;
     }
     
+    div > hr{
+        background-color: #4B6CC1;
+        height: 0.39rem;
+        margin-top: .4rem;
+    }
+    nav > ul{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 0.6rem;
+    }
+    ul > li {
+        font-size: .875rem;
+        color: #5e5e5e;
+        margin-top: 1rem;
+        margin-right: 3rem;
+        font-weight:normal;
+    }
+    main > h1{
+        font-size: 2.625rem;
+        font-weight: 400;
+        color: #000000;
+    }
+
+    main{
+        width: 740px;
+        justify-content: center;
+    }
+
     main > div{
         display: flex;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+    main>p{
+        font-size: 1.0rem;
+        font-weight: 400;
+        color: #8d8d8a;
+        text-align: justify;
+        line-height: 2rem;
+        max-width: 100%;
     }
 }
     
